@@ -300,12 +300,12 @@ function animation() {
           //remove from scene altogather
           //   enemies.splice(index, 1);
 
-          if (score >= 10) {
+          if (score >= 30) {
             const hugeWeaon = new HugeWeapon(0, 0, canvas.width, canvas.height);
             enemies = [];
             hugeWeaponSound.play();
             hugeWeaon.draw();
-            score -= 10;
+            score -= 30;
             console.log("times");
             scoreEl.innerHTML = score;
           }
